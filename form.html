@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="icons/favicon.png" rel="shortcut icon" type="image/png">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Petrova</title>
+</head>
+
+<body>
+  <section class="header">
+    <div class="container header__container">
+      <nav class="header__nav">
+        <ul class="header__list list-reset">
+          <li class="header__item">
+            <a href="book.html" class="header__link">Книга</a>
+          </li>
+          <li class="header__item">
+            <a href="curse.html" class="header__link">Курсы</a>
+          </li>
+          <li class="header__item">
+            <a href="social.html" class="header__link">Социальные сети</a>
+          </li>
+          <li class="header__item">
+            <a href="form.html" class="header__link">Контакты</a>
+          </li>
+        </ul>
+
+        <a href="#" class="header__telegram">Телеграм канал</a>
+      </nav>
+    </div>
+  </section>
+
+  <section class="form">
+    <div class="container form-container">
+      <div class="form__left">
+        <h2 class="section-title form__title title-reset">Мы поможем сделать правильный выбор</h2>
+        <h3 class="form__subtitle title-reset">
+          Проконсультируем и ответим на все интересующие Вас вопросы
+        </h3>
+
+        <h3 class="form__wrap-name title-reset">
+          Оставить заявку
+        </h3>
+
+        <form action="https://jsonplaceholder.typicode.com/posts" method="POST">
+
+          <ul class="form__list list-reset">
+            <li class="form__item">
+              <input class="form__inputs" type="text" placeholder="ФИО" name="ФИО">
+            </li>
+
+            <li class="form__item">
+              <input class="form__inputs" type="tel" placeholder="Телефон" name="Телефон">
+            </li>
+
+            <li class="form__item">
+              <input class="form__inputs" type="text" placeholder="Удобное время для связи" name="Удобное время для связи">
+            </li>
+          </ul>
+
+          <button class="btn form__btn">Получить консультацию</button>
+        </form>
+
+      </div>
+      <div class="form__right form__img"></div>
+
+    </div>
+  </section>
+
+
+</body>
+
+</html>

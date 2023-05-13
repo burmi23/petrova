@@ -43,21 +43,32 @@ body
   cursor: pointer
   color: #FFFFFF
   outline: none
-  border: none
-  background-color: #3A9AFF
+  border: 1px solid #DFE1E8
   border-radius: 3px
+  background-color: transparent
   font-weight: 510
   font-size: 17px
-  line-height: 20px
   z-index: 10
-  transition: outline .3s ease-in-out, background-color .3s ease-in-out
+  transition: border .3s ease-in-out, background-color .3s ease-in-out, color .3s ease-in-out
 
 // btn animation
 .btn:focus
-  outline: 2px solid #3b32d4
+  border: 2px solid #FFB6C1
+  background-color: transparent
 
 .btn:hover
-  background-color: #2272c7
+  background-color: #FFB6C1
+  color: #fff
 
 .btn:active
-  outline: 2px solid #4543cf
+  background-color: #ed8c9b
+  color: #fff
+
+  // general
+.section-title
+  margin-bottom: 50px
+  font-weight: 510
+  font-size: 50px
+  color: #000000
+  text-transform: uppercase
+

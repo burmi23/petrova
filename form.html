@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <section class="header">
+  <header class="header">
     <div class="container header__container">
       <nav class="header__nav">
         <ul class="header__list list-reset">
@@ -33,41 +33,45 @@
         <a href="#" class="header__telegram">Телеграм канал</a>
       </nav>
     </div>
-  </section>
+  </header>
 
   <section class="form">
     <div class="container form-container">
-      <div class="form__left">
-        <h2 class="section-title form__title title-reset">Мы поможем сделать правильный выбор</h2>
-        <h3 class="form__subtitle title-reset">
-          Проконсультируем и ответим на все интересующие Вас вопросы
-        </h3>
+      <h2 class="section-title form-title title-reset">Контакты</h2>
 
-        <h3 class="form__wrap-name title-reset">
-          Оставить заявку
-        </h3>
+      <div class="form__wrap">
+        <div class="form__left">
+          <h2 class="form__left-title title-reset">Мы поможем сделать правильный выбор</h2>
+          <h3 class="form__subtitle title-reset">
+            Проконсультируем и ответим на все интересующие Вас вопросы
+          </h3>
 
-        <form action="https://jsonplaceholder.typicode.com/posts" method="POST">
+          <h3 class="form__wrap-name title-reset">
+            Оставить заявку
+          </h3>
 
-          <ul class="form__list list-reset">
-            <li class="form__item">
-              <input class="form__inputs" type="text" placeholder="ФИО" name="ФИО">
-            </li>
+          <form action="https://jsonplaceholder.typicode.com/posts" method="POST">
 
-            <li class="form__item">
-              <input class="form__inputs" type="tel" placeholder="Телефон" name="Телефон">
-            </li>
+            <ul class="form__list list-reset">
+              <li class="form__item">
+                <input class="form__inputs" type="text" placeholder="ФИО" name="ФИО" required>
+              </li>
 
-            <li class="form__item">
-              <input class="form__inputs" type="text" placeholder="Удобное время для связи" name="Удобное время для связи">
-            </li>
-          </ul>
+              <li class="form__item">
+                <input class="form__inputs" type="tel" placeholder="Телефон" name="Телефон" required>
+              </li>
 
-          <button class="btn form__btn">Получить консультацию</button>
-        </form>
+              <li class="form__item">
+                <input class="form__inputs" type="text" placeholder="Удобное время для связи" name="Удобное время для связи" required>
+              </li>
+            </ul>
 
+            <button class="btn form__btn">Получить консультацию</button>
+          </form>
+
+        </div>
+        <div class="form__right form__img"></div>
       </div>
-      <div class="form__right form__img"></div>
 
     </div>
   </section>

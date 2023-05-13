@@ -2,18 +2,34 @@
   padding-top: 19px
   padding-bottom: 40px
 
+.header__container
+  display: flex
+  // justify-content: space-between
+  align-items: center
+
+.header__nav-wrap
+  // position: relative
+  width: 100%
+  display: flex
+  // justify-content: space-between
+  align-items: center
+
+.header__logo
+  display: block
+  margin-right: 40px
+
 .header__nav
+  width: 100%
   display: flex
   align-items: center
 
 .header__list
   display: flex
-  padding-left: 8px
+  // padding-left: 8px
   margin-right: auto
 
 .header__item
   position: relative
-
 
 .header__item:not(:last-child)
   margin-right: 38px
@@ -27,8 +43,8 @@
   text-transform: uppercase
   outline: none
 
-.header__item:first-child .header__link
-  color: #000000
+.header__link-select
+  color: #0a0505
 
 .header__telegram
   display: block
@@ -77,3 +93,50 @@
 .header__link:active::after
   transform: scaleX(100%)
   background-color: #ed8c9b
+
+// MEDIA
+
+@media (max-width: 900px)
+
+  .header__nav-wrap
+    justify-content: space-between
+
+  .header__burger
+    display: block
+
+  .header__nav
+    display: none
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100vh
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 50px
+    background-color: #fff
+    box-shadow: 0 0 25px #888
+    overflow-y: auto
+    transform: translateY(-120%)
+    visibility: hidden
+    z-index: 100
+    transition: transform .3s ease-in-out
+
+  .header__nav--active
+    display: block
+    transform: none
+    visibility: visible
+
+  .header__nav .header__list
+    margin-right: 0
+    display: flex
+    flex-direction: column
+    align-items: center
+
+  .header__nav .header__item
+    margin-right: 0
+    margin-bottom: 30px
+
+  .header__telegram
+    margin: 0 auto

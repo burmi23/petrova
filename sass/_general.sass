@@ -15,6 +15,7 @@ img, svg
   max-width: 100%
 
 body
+
   font-family: 'SFProDisplay', sans-serif
   font-weight: 510
   min-width: 320px
@@ -71,6 +72,16 @@ body
   font-size: 50px
   color: #000000
   text-transform: uppercase
+
+// плавное появление страниц
+.body_hide
+  // visibility: hidden
+  opacity: 0
+  transition: opacity .9s ease-in-out, visibility .9s ease-in-out
+
+.body_visible
+  // visibility: visible
+  opacity: 1
 
 @media (max-width: 601px)
   .section-title-mob

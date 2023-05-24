@@ -17,14 +17,25 @@
     <div class="container header__container">
       <div class="header__nav-wrap">
         <a href="index.html" class="header__logo">
-          <img src="img/logo.svg" alt="logo" class="header__logo-img">
+          <img src="img/logo-header.svg" alt="logo" class="header__logo-img">
         </a>
+
+        <ul class="header__list-mob list-reset">
+          <li class="header__item header__item-mob">
+            <a href="book.html" class="header__link">Книга</a>
+          </li>
+          <li class="header__item header__item-mob">
+            <a href="curse.html" class="header__link">Курсы</a>
+          </li>
+        </ul>
 
         <button class="header__burger" type="button">
           <span class="header__burger-line"></span>
           <span class="header__burger-line"></span>
           <span class="header__burger-line"></span>
         </button>
+
+
 
 
         <nav class="header__nav">
@@ -53,14 +64,31 @@
   <section class="hero">
     <div class="container">
       <div class="hero__logo">
-
-        <img src="img/PETROVA.png" alt="logo" class="hero__img">
+        <picture>
+          <source srcset="img/logo-main.svg" media="(max-width: 900px)">
+          <img src="img/PETROVA.png" alt="logo" class="hero__img">
+        </picture>
       </div>
     </div>
-
   </section>
 
-<script src="js/burger-menu.js"></script>
+  <section class="telegram">
+    <div class="container">
+      <a href="#" class="telegram__link">
+        TELEGRAM PETROVA
+      </a>
+    </div>
+  </section>
+
+  <section class="policy">
+    <div class="container">
+      <a href="#" class="policy__link">
+        ПОЛИТИКА КОНФИДИЦИАЛЬНОСТИ
+      </a>
+    </div>
+  </section>
+
+  <script src="js/burger-menu.js"></script>
 
 </body>
 

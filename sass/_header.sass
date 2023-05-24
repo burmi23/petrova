@@ -6,6 +6,7 @@
   display: flex
   // justify-content: space-between
   align-items: center
+  // position: relative
 
 .header__nav-wrap
   // position: relative
@@ -18,6 +19,10 @@
   display: block
   margin-right: 40px
   z-index: 110
+
+.header__logo-img
+  width:  101px
+  height: 26px
 
 .header__nav
   width: 100%
@@ -95,12 +100,25 @@
   transform: scaleX(100%)
   background-color: #ed8c9b
 
+.header__list-mob
+  display: none
+
 // MEDIA
 
 @media (max-width: 900px)
 
+  .header__list-mob
+    display: flex
+    margin-right: auto
+
+  .header__item-mob:not(:last-child)
+    margin-right: 10px
+
+  .header__logo
+    margin-right: 15px
+
   .header__nav-wrap
-    justify-content: space-between
+    justify-content: flex-start
 
   .header__burger
     display: block
@@ -142,3 +160,7 @@
 
   .header__telegram
     margin: 0 auto
+
+@media (max-width: 480px)
+    .header__container
+      padding: 0 10px

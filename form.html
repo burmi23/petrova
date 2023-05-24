@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="icons/favicon.png" rel="shortcut icon" type="image/png">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/choices.min.css">
   <link rel="stylesheet" href="css/style.min.css">
   <title>Petrova</title>
   <script src="js/body.js"></script>
@@ -19,6 +20,15 @@
         <a href="index.html" class="header__logo">
           <img src="img/logo.svg" alt="logo" class="header__logo-img">
         </a>
+
+        <ul class="header__list-mob list-reset">
+          <li class="header__item header__item-mob">
+            <a href="book.html" class="header__link">Книга</a>
+          </li>
+          <li class="header__item header__item-mob">
+            <a href="curse.html" class="header__link">Курсы</a>
+          </li>
+        </ul>
 
         <button class="header__burger" type="button">
           <span class="header__burger-line"></span>
@@ -73,6 +83,16 @@
               </li>
 
               <li class="form__item">
+                <select name="select" class="select">
+                  <option value="">Выберете тему обращения</option>
+                  <option value="Выбор_1">Возврат</option>
+                  <option value="Выбор_2">Консультация</option>
+                  <option value="Выбор_3">Другие вопросы</option>
+                </select>
+              </li>
+
+
+              <li class="form__item">
                 <input class="form__inputs" type="tel" placeholder="Телефон" name="Телефон" required>
               </li>
 
@@ -83,17 +103,91 @@
 
             <button class="btn form__btn">Получить консультацию</button>
 
-            <label class="form__check">
+            <!-- <label class="form__check">
               <input class="form__check-box" type="checkbox" required>
               <span class="form__check-tx">Я согласен(на) с
                 <a href="#" class="form__checkbox-link">
                   пользовательским соглашением</a> и <a href="#" class="form__checkbox-link">политикой конфиденциальности</a>, а также согласен(на) на обработку персональных данных
               </span>
-            </label>
+            </label> -->
           </form>
 
         </div>
-        <div class="form__right form__img"></div>
+        <div class="form__right">
+          <ul class="form__contact-list  list-reset">
+            <li class="form__contact-item">
+              <h3 class="form__contact-title title-reset">Контакты сотрудников</h3>
+
+              <div class="form__contact-block">
+                <div class="form__contact-wrap-left">
+                  <a href="#" class="form__contact-telegram-link">
+                    <img src="img/form-contacts-telegram.svg" alt="" class="form__contact-img">
+                  </a>
+                  <div class="form__contacts-name-block">
+                    <span class="form__contact-name">Павел</span>
+                  <span class="form__contact-name-text">Консультант по инфопродуктам</span>
+                  </div>
+                </div>
+                <div class="form__contact-wrap-right">
+                  <span class="form__contact-email">E-mail:</span>
+                  <a href="#" class="form__contact-email-link">
+                    info@petrova.com
+                  </a>
+                </div>
+              </div>
+
+            </li>
+            <li class="form__contact-item">
+              <h3 class="form__contact-title title-reset">Подписывайтесь на нас</h3>
+              <ul class="footer__icons-list footer__icons-list-form list-reset">
+                <li class="footer__icons-item">
+                  <a href="#" class="footer__icon-link">
+                    <img src="icons/telegram.svg" alt="telegram" class="footer__icon-img footer__icon-img-an">
+
+                  </a>
+                </li>
+                <li class="footer__icons-item">
+                  <a href="#" class="footer__icon-link">
+                    <img src="icons/youtube.svg" alt="youtube" class="footer__icon-img footer__icon-img-an">
+                  </a>
+                </li>
+                <li class="footer__icons-item">
+                  <a href="#" class="footer__icon-link">
+                    <img src="icons/instagram.svg" alt="instagram" class="footer__icon-img footer__icon-img-an">
+                  </a>
+                </li>
+                <li class="footer__icons-item">
+                  <a href="#" class="footer__icon-link">
+                    <img src="icons/tiktok.svg" alt="tiktok" class="footer__icon-img footer__icon-img-an">
+                  </a>
+                </li>
+              </ul>
+
+            </li>
+            <li class="form__contact-item more">
+              <ul class="more__list list-reset">
+                <li class="more__item">
+                  <a href="#" class="more__item-link">Проекты</a>
+                </li>
+                <li class="more__item">
+                  <a href="#" class="more__item-link">Отзывы</a>
+                </li>
+                <li class="more__item">
+                  <a href="#" class="more__item-link">Договор оферты</a>
+                </li>
+                <li class="more__item">
+                  <a href="#" class="more__item-link">Партнерское соглашение</a>
+                </li>
+                <li class="more__item">
+                  <a href="#" class="more__item-link">Конфидециальность</a>
+                </li>
+              </ul>
+
+
+            </li>
+          </ul>
+
+        </div>
       </div>
 
     </div>
@@ -101,6 +195,8 @@
 
 
   <script src="js/burger-menu.js"></script>
+  <script src="js/choices.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

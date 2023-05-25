@@ -13,26 +13,25 @@
   <title>Petrova</title>
 </head>
 
-<body class="body_hide">
-
-  <div class="agree__on">
-    <div class="agree__wrap">
-      <p class="agree__text descr-reset">Вам уже исполнилось 18 лет?</p>
-      <p class="agree__subtext descr-reset">Содержание сайта предназначено для просмотра исключительно лицам достигшим совершеннолетия!</p>
-
-      <div class="agree__buttons-wrap">
-        <button class="agree__btn agree__btn-yes">Да</button>
-
-        <button class="agree__btn agree__btn-no">Нет</button>
-      </div>
+<body class="body_hide stop-scroll">
 
 
-    </div>
-  </div>
 
   <div class="book__bg">
+    <div class="agree__on">
+      <div class="agree__wrap">
+        <p class="agree__text descr-reset">Вам уже исполнилось 18 лет?</p>
+        <p class="agree__subtext descr-reset">Содержание сайта предназначено для просмотра исключительно лицам достигшим совершеннолетия!</p>
 
-    <main>
+        <div class="agree__buttons-wrap">
+          <button class="agree__btn agree__btn-yes">Да</button>
+
+          <a class="agree__btn agree__btn-no" href="index.html">Нет</a>
+        </div>
+      </div>
+    </div>
+
+    <main class="blur-on-off">
       <section class="book">
         <div class="container">
           <div class="book__top">
@@ -51,7 +50,7 @@
             </div>
           </div>
 
-          <div class="book__bottom">
+          <div class="book__bottom block-off">
             <h2 class="book__title title-reset">Тарифы</h2>
             <ul class="book__list list-reset">
               <li class="book__item">
@@ -139,7 +138,7 @@
       </div>
     </footer>
   </div>
-
+  <script src="js/popup.js"></script>
 </body>
 
 </html>

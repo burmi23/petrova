@@ -72,8 +72,6 @@
 .form__item:not(:last-child)
   margin-bottom: 14px
 
-
-
 .form__inputs
   width: 100%
   min-height: 50px
@@ -181,6 +179,8 @@
 
 .form__contact-img
   display: block
+  width: 30px
+  height: 30px
 
 .form__contacts-name-block
   display: flex
@@ -199,7 +199,6 @@
   color: #AAA8B6
   letter-spacing: 0.7px
 
-
 .form__contact-email
   font-weight: 400
   font-size: 12px
@@ -214,7 +213,6 @@
   font-size: 12px
   line-height: 17px
   letter-spacing: 1px
-
 
 .form__icons-list
   display: flex
@@ -287,7 +285,40 @@
   font-size: 15px
   color: #AAA8B6
 
+.choices__list--single .choices__item
+  color: #AAA8B6
+
+
+.choices[data-type*=select-one]
+  font-weight: 400
+  font-size: 15px
+  color: #AAA8B6
+
 // MEDIA
+
+@media (max-width: 1200px)
+  .form__left,
+  .form__right
+    min-width: 560px
+    // width: 60%
+    margin-right: 0
+    margin: 0 auto
+
+  .form__left
+    margin-bottom: 39px
+
+  .form__wrap
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 15px
+
+  .form__contact-item
+    max-width: 100%
+
+  .form__contact-wrap-left
+    margin-right: auto
+
 @media (max-width: 1024px)
   .form
     padding-left: 0
@@ -298,12 +329,15 @@
     align-items: center
     padding: 15px
 
-  .form__left,
-  .form__right
-    // width: 560px
-    width: 60%
-    margin-right: 0
-    margin: 0 auto
+  // .form__left,
+  // .form__right
+  //   // width: 560px
+  //   width: 60%
+  //   margin-right: 0
+  //   margin: 0 auto
+
+  .form__left
+    margin-bottom: 39px
 
   .more__list
     flex-direction: column
@@ -312,10 +346,18 @@
   .form
     padding-top: 24px
 
+
+
+  // .form__contact-block
+
+
 @media (max-width: 600px)
+
   .form__left,
   .form__right
+    min-width: 0
     width: 100%
+
 
   .form__title
     font-size: 25px
@@ -323,7 +365,7 @@
   .footer__icons-list-form
     display: flex
 
-@media (max-width: 428px)
+@media (max-width: 500px)
   .form__left
     width: 100%
 

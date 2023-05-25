@@ -1,0 +1,60 @@
+#popup_dream-farm_overlay {
+	display:none;
+	height:100%;	width:100%;
+	left:0;		top:0;
+	position:fixed;
+	z-index:100;
+}
+
+.popup_dream-farm {
+	background:url(pop_up_dreamfarm.jpg) center;
+	width:800px;		height:600px;
+	position:absolute;
+	top: 30px;		left: 50%;
+	margin-left: -400px;
+	z-index:101;
+	display: none;
+}
+
+.popup_dream-farm .no-thanks {
+	display: none;
+	color: #fff;
+	cursor: pointer;
+	font: normal .9em Arial, sans-serif;
+	position: absolute;
+	top: 568px;
+	left: 375px;
+	text-decoration: underline;
+}
+.popup_dream-farm .no-thanks:hover {
+	text-decoration: none;
+}
+
+.popup_dream-farm a.btn_more {
+	display:block;
+	position:absolute;
+	height:101px;
+	width:319px;
+	background:url(bot.png) left top no-repeat;
+	top:480px;
+	left:255px;
+}
+.popup_dream-farm a.btn_more:hover {
+	cursor: pointer;
+	background:url(bot.png) right bottom no-repeat;
+	left:251px;
+}
+
+.popup_dream-farm a.close {
+	display:block;
+	position:absolute;
+	height:59px;
+	width:60px;
+	background:url(close.png) center top no-repeat;
+	top:7px;
+	left:735px;
+}
+.popup_dream-farm a.close:hover {
+	cursor: pointer;
+	background:url(close.png) center bottom no-repeat;
+}

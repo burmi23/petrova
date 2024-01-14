@@ -1,0 +1,415 @@
+.form
+  padding-bottom: 35px
+
+.form__wrap
+  display: flex
+  height: 0
+  min-height: 580px
+
+  // -----
+  padding-left: 9px
+
+  // padding: 38px 0 39px 27px
+  // border: 1px solid #DFE1E8
+  // border-radius: 3px
+
+.form__left
+  width: calc(530 / 1160 * 100%)
+  padding: 25px 28px
+  margin-right: 63px
+  margin-bottom: 39px
+  border: 1px solid #DFE1E8
+  border-radius: 3px
+  height: 495px
+
+.form__right
+  height: 495px
+  width: calc(563 / 1160 * 100%)
+  // width: 100%
+  background-position: center 13px
+  background-size: contain
+  background-repeat: no-repeat
+
+.form__left-title
+  max-width: 353px
+  margin-bottom: 20px
+  font-weight: 500
+  font-size: 32px
+  line-height: 32px
+  letter-spacing: 2px
+
+.form__subtitle
+  max-width: 289px
+  margin-bottom: 20px
+  font-weight: 400
+  font-size: 15px
+  line-height: 17px
+  letter-spacing: 1px
+  word-spacing: -1px
+
+.form__wrap-name
+  margin-bottom: 20px
+  font-weight: 400
+  font-size: 20px
+  line-height: 24px
+  letter-spacing: 1px
+  word-spacing: -1px
+
+.choices__inner
+  min-height: 50px
+  font-weight: 400
+  font-size: 15px
+
+.choices__list--single
+  padding: 9px 17px 4px 12px
+  letter-spacing: 1px
+  word-spacing: -2px
+
+.form__list
+  display: flex
+  flex-direction: column
+  margin-bottom: 13px
+
+.form__item:not(:last-child)
+  margin-bottom: 14px
+
+.form__inputs
+  width: 100%
+  min-height: 50px
+  padding: 15px 16px 14px 19px
+  border: none
+  background: #F8F8F8
+  transition: background-color .3s ease-in-out, outline .3s ease-in-out
+
+.form__inputs:focus-visible
+  background-color: #eae9e9
+  outline: 0
+
+.form__inputs:hover
+  background-color: #eae9e9
+  outline: 0
+
+.form__inputs:active
+  background-color: #eae9e9
+  outline: 0
+
+.form__inputs::placeholder
+  font-weight: 400
+  font-size: 15px
+  line-height: 18px
+  color: #AAA8B6
+  letter-spacing: 1px
+  word-spacing: -2px
+
+.form__under-text
+  font-weight: 400
+  font-size: 15px
+  line-height: 18px
+  color: #AAA8B6
+  letter-spacing: 1px
+  word-spacing: -2px
+
+.form__check
+  position: relative
+
+.form__check-box
+  position: relative
+
+.form__check-tx
+  font-weight: 400
+  font-size: 15px
+  line-height: 17px
+
+.form__checkbox-link
+  text-decoration-line: underline
+  color: #3172B9
+
+.form__btn
+  width: 100%
+  height: 48px
+  background: #FFB6C1
+  color: #fff
+  margin-bottom: 20px
+
+.form__btn:focus
+  border: 2px solid #F4AEB9
+  background-color: #FFB6C1
+
+.form__btn:active
+  background-color: #ed8c9b
+  color: #fff
+
+.form__left,
+.form__right,
+.form__contact-list
+  height: 100%
+
+.form__contact-list
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  gap: 27px
+
+.form__contact-item
+  max-width: 564px
+  min-height: 155px
+  padding-top: 31px
+  padding-right: 21px
+  padding-bottom: 26px
+  padding-left: 22px
+  background: #FFFFFF
+  border: 1px solid #DFE1E8
+  border-radius: 5px
+
+.form__item > p
+  margin: 0
+
+.form__contact-item:nth-child(2)
+  min-height: 145px
+
+.form__contact-item:nth-child(3)
+  min-height: 141px
+
+.form__contact-title
+  font-weight: 400
+  font-size: 25px
+  color: #000000
+  margin-bottom: 26px
+  letter-spacing: 1px
+  word-spacing: 4px
+
+.form__contact-block
+  display: flex
+  // justify-content: space-between
+  align-items: flex-end
+  padding-left: 6px
+
+.form__contact-wrap-left
+  display: flex
+  align-items: center
+  margin-right: auto
+
+.form__contact-telegram-link
+  // outline: 1px solid #AAA8B6
+  border: none
+  // outline-offset: 3px
+  // border-radius: 50px
+  margin-right: 18px
+
+.form__contact-img
+  border: none
+  display: block
+  // width: 30px
+  // height: 30px
+  width: 45px
+  height: 45px
+
+.form__contacts-name-block
+  display: flex
+  flex-direction: column
+  font-weight: 400
+  font-size: 15px
+  color: #2D3B4F
+
+.form__contact-name
+  margin-bottom: 6px
+  letter-spacing: 1px
+
+.form__contact-name-text
+  font-weight: 400
+  font-size: 12px
+  color: #AAA8B6
+  letter-spacing: 0.7px
+
+.form__contact-email
+  font-weight: 400
+  font-size: 12px
+  color: #000
+
+.form__contact-wrap-right
+  padding-top: 1px
+
+.form__contact-email-link
+  color: #436CEF
+  font-weight: 400
+  font-size: 12px
+  line-height: 17px
+  letter-spacing: 1px
+
+.form__icons-list
+  display: flex
+
+.form__icons-item:not(:last-child)
+  margin-right: 10px
+
+.form__icons-item,
+.form__icon-img-an
+  position: relative
+  display: block
+
+.form__icon-img
+  width: 30px
+  height: 30px
+
+.form__icon-link::after
+  content: ""
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  opacity: 0
+  outline: 2px solid #4E6080
+  outline-offset: 3px
+  border-radius: 100%
+  transition: opacity .5s ease-in-out
+
+.form__icons-item:hover .form__icon-link::after
+  opacity: 1
+
+.more__list
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  gap: 10px 0
+
+.more__item
+  position: relative
+  min-width: 150px
+  height: 36.25px
+  background-color: #F8F8F8
+  border-radius: 4.60247px
+  padding: 10px 29px
+  text-align: center
+  color: #6B7993
+  transition: background-color .3s ease-in-out, color .3s ease-in-out
+
+.more__item:hover
+  background-color: #EEEEEE
+  color: #1D222D
+
+.more__item-link::before
+  content: " "
+  position: absolute
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+
+.form__textarea
+  width: 100%
+  height: 102px
+  // owerfloy-y: none
+  resize: none
+
+.form__textarea::placeholder
+  font-weight: 400
+  font-size: 15px
+  color: #AAA8B6
+
+.choices__list--single .choices__item
+  color: #AAA8B6
+
+.choices[data-type*=select-one]
+  font-weight: 400
+  font-size: 15px
+  color: #AAA8B6
+
+// MEDIA
+
+@media (max-width: 1200px)
+  .form__left,
+  .form__right
+    min-width: 560px
+    // width: 60%
+    margin-right: 0
+    margin: 0 auto
+
+  .form__left
+    margin-bottom: 39px
+
+  .form__wrap
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 15px
+
+  .form__contact-item
+    max-width: 100%
+
+  .form__contact-wrap-left
+    margin-right: auto
+
+@media (max-width: 1024px)
+  .form
+    padding-left: 0
+
+  .form__wrap
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 15px
+
+  // .form__left,
+  // .form__right
+  //   // width: 560px
+  //   width: 60%
+  //   margin-right: 0
+  //   margin: 0 auto
+
+  .form__left
+    margin-bottom: 39px
+
+  .more__list
+    flex-direction: column
+
+@media (max-width:1200px)
+
+  .form__contact-item:nth-child(3)
+    min-height: 0
+    margin-bottom: 20px
+
+@media (max-width: 1024px)
+
+  .form__contact-list
+    height: auto
+
+@media (max-width: 800px)
+  .form
+    padding-top: 24px
+
+  // .form__contact-block
+
+@media (max-width: 600px)
+
+  .form__left,
+  .form__right
+    min-width: 0
+    width: 100%
+
+  .form__title
+    font-size: 25px
+
+  .footer__icons-list-form
+    display: flex
+
+@media (max-width: 500px)
+  .form__left
+    width: 100%
+
+  .form__contact-block
+    flex-direction: column
+    align-items: flex-start
+
+  .form__contact-wrap-left
+    margin-bottom: 25px
+
+  .form__contact-title
+    font-weight: 400
+    font-size: 22px
+
+  .form__wrap
+    min-height: 850px
+
+  .form__right
+    padding-bottom: 80px

@@ -1,0 +1,58 @@
+.header__burger
+  display: none
+  position: relative
+  width: 30px
+  height: 30px
+  background-color: transparent
+  border-radius: 5px
+  border: none
+  outline: none
+  cursor: pointer
+  color: #000
+  z-index: 110
+
+
+.header__burger-line
+  position: absolute
+  width: 100%
+  height: 3px
+  transform: translateX(-50%)
+  background-color: currentColor
+  transition: transform .3s ease-in-out
+
+
+.header__burger-line:nth-child(1)
+  top:25%
+  transition: transform .3s ease-in-out, top .3s ease-in-out
+
+.header__burger-line:nth-child(2)
+  width: 70%
+  right: 0
+  top: 50%
+  transform: translateY(-50%)
+  transition: transform .3s ease-in-out, top .3s ease-in-out
+
+.header__burger-line:nth-child(3)
+  bottom: 25%
+  transition: transform .3s ease-in-out, bottom .3s ease-in-out
+
+
+// active
+.burger--active .header__burger-line:nth-child(1)
+  top:50%
+  left:0%
+  transform: rotate(45deg)
+  transition: transform .3s ease-in-out, top .3s ease-in-out
+
+.burger--active .header__burger-line:nth-child(2)
+  top: 50%
+  left:15%
+  transform: rotate(-45deg)
+  opacity: 0
+  transition: transform .3s ease-in-out, top .3s ease-in-out, opacity .4s ease-in-out
+
+.burger--active .header__burger-line:nth-child(3)
+  top: 50%
+  left:0%
+  transform: rotate(-45deg)
+  transition: transform .3s ease-in-out, bottom .3s ease-in-out

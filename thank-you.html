@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="icons/favicon.png" rel="shortcut icon" type="image/png">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/choices.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Petrova</title>
+  <script src="js/body.js"></script>
+</head>
+
+<body class="body_hide">
+  <header class="header">
+    <div class="container header__container">
+      <div class="header__nav-wrap">
+        <a href="index.html" class="header__logo">
+          <!-- <img src="img/logo-header.svg" alt="logo" class="header__logo-img"> -->
+          Petrova
+        </a>
+
+        <ul class="header__list-mob list-reset">
+          <li class="header__item header__item-mob">
+            <a href="book.html" class="header__link">Книга</a>
+          </li>
+          <li class="header__item header__item-mob">
+            <a href="curse.html" class="header__link">Курсы</a>
+          </li>
+        </ul>
+
+        <button class="header__burger" type="button">
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+        </button>
+
+
+        <nav class="header__nav">
+          <ul class="header__list list-reset">
+            <li class="header__item">
+              <a href="book.html" class="header__link">Книга</a>
+            </li>
+            <!-- <li class="header__item">
+              <a href="#" class="header__link">Курсы</a>
+            </li> -->
+            <li class="header__item">
+              <a href="form.html" class="header__link">Контакты</a>
+            </li>
+          </ul>
+
+          <!-- <a href="#" class="header__telegram">Телеграм канал</a> -->
+        </nav>
+      </div>
+
+    </div>
+  </header>
+
+  <div class="thank-you">
+    <div class="thank-you-text">
+      <span class="thank-you-descr">Спасибо за обращение!</span>
+      <span class="thank-you-descr">Мы свяжемся с вами в ближайшее время.</span>
+    </div>
+    <button class="btn btn-thank-you">
+      <span class="btn-thank-you-line"></span>
+      <span class="btn-thank-you-line"></span>
+    </button>
+  </div>
+
+  <section class="form">
+    <div class="container form-container">
+      <h2 class="section-title-mob section-title-desctop form-title title-reset">Контакты</h2>
+
+      <div class="form__wrap">
+        <div class="form__left">
+          <h2 class="form__left-title title-reset">Нужна помощь?</h2>
+          <h3 class="form__subtitle title-reset">
+            Есть вопросы по продукту? Возникла проблема? </h3>
+
+          <h3 class="form__wrap-name title-reset">
+            Напишите нам </h3>
+
+          <form enctype="multipart/form-data" method="POST" id="form" onsubmit="submitForm(event)" action="send.php">
+
+            <ul class="form__list list-reset">
+
+              <li class="form__item">
+                <select name="select" class="select">
+                  <option value="">Выберете тему обращения</option>
+                  <option class="form__option" value="Консультация по инфопродукту">Консультация по инфопродукту</option>
+                  <option class="form__option" value="Консультация по инфопродукту">Оформить возврат</option>
+                  <option class="form__option" value="Консультация по инфопродукту">Другой вопрос</option>
+                </select>
+              </li>
+
+
+              <li class="form__item">
+                <input class="form__inputs" type="email" placeholder="E-mail" name="email" required>
+              </li>
+
+              <li class="form__item">
+                <textarea class="form__inputs form__textarea" type="text" placeholder="Напишите вопрос" name="text" required></textarea>
+              </li>
+            </ul>
+
+            <button class="btn form__btn" value="Отправить" type="submit">Отправить</button>
+
+            <!-- <label class="form__check">
+              <input class="form__check-box" type="checkbox" required>
+              <span class="form__check-tx">Я согласен(на) с
+                <a href="#" class="form__checkbox-link">
+                  пользовательским соглашением</a> и <a href="#" class="form__checkbox-link">политикой конфиденциальности</a>, а также согласен(на) на обработку персональных данных
+              </span>
+            </label> -->
+          </form>
+
+        </div>
+        <div class="form__right">
+          <ul class="form__contact-list  list-reset">
+            <li class="form__contact-item">
+              <h3 class="form__contact-title title-reset">Контакты сотрудников</h3>
+
+              <div class="form__contact-block">
+                <div class="form__contact-wrap-left">
+                  <a href="#" class="form__contact-telegram-link">
+                    <img src="icons/form-icon-tg-new.svg" alt="telegram-link" class="form__contact-img">
+                  </a>
+                  <div class="form__contacts-name-block">
+                    <span class="form__contact-name">Павел</span>
+                    <span class="form__contact-name-text">Консультант по инфопродуктам</span>
+                  </div>
+                </div>
+                <div class="form__contact-wrap-right">
+                  <span class="form__contact-email">E-mail:</span>
+                  <a href="#" class="form__contact-email-link">
+                    info@petrova.com
+                  </a>
+                </div>
+              </div>
+
+            </li>
+            <li class="form__contact-item">
+              <h3 class="form__contact-title title-reset">Подписывайтесь на нас</h3>
+              <ul class="form__icons-list form__icons-list-form list-reset">
+                <li class="form__icons-item">
+                  <a href="#" class="form__icon-link">
+                    <img src="icons/telegram.svg" alt="telegram" class="form__icon-img form__icon-img-an">
+
+                  </a>
+                </li>
+                <li class="form__icons-item">
+                  <a href="#" class="form__icon-link">
+                    <img src="icons/youtube.svg" alt="youtube" class="form__icon-img form__icon-img-an">
+                  </a>
+                </li>
+                <li class="form__icons-item">
+                  <a href="#" class="form__icon-link">
+                    <img src="icons/instagram.svg" alt="instagram" class="form__icon-img form__icon-img-an">
+                  </a>
+                </li>
+                <li class="form__icons-item">
+                  <a href="#" class="form__icon-link">
+                    <img src="icons/tiktok.svg" alt="tiktok" class="form__icon-img form__icon-img-an">
+                  </a>
+                </li>
+              </ul>
+
+            </li>
+            <li class="form__contact-item more">
+              <ul class="more__list list-reset">
+                <li class="more__item">
+                  <a href="#" class="more__item-link">Проекты</a>
+                </li>
+                <li class="more__item">
+                  <a href="#" class="more__item-link">Отзывы</a>
+                </li>
+                <li class="more__item">
+                  <a href="#" class="more__item-link">Договор оферты</a>
+                </li>
+                <li class="more__item">
+                  <a href="#" class="more__item-link">Партнерское соглашение</a>
+                </li>
+                <li class="more__item">
+                  <a href="#" class="more__item-link">Конфидециальность</a>
+                </li>
+              </ul>
+
+
+            </li>
+          </ul>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="js/burger-menu.js"></script>
+  <script src="js/choices.min.js"></script>
+  <!-- <script src="js/mailer.js"></script> -->
+  <script src="js/script.js"></script>
+  <script src="js/close-window.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+.header
+  padding-top: 19px
+  padding-bottom: 40px
+
+.header__container
+  display: flex
+  // justify-content: space-between
+  align-items: center
+  // position: relative
+
+.header__nav-wrap
+  // position: relative
+  width: 100%
+  display: flex
+  // justify-content: space-between
+  align-items: center
+  padding-left: 8px
+
+.header__logo
+  display: block
+  margin-right: 41px
+  z-index: 110
+  // padding-top: 8px
+  font-weight: 400
+  font-size: 18px
+  line-height: 21px
+  color: #aaa8b6
+  letter-spacing: 1px
+  text-transform: uppercase
+  outline: none
+
+// .header__item-telegram
+//   margin-right: 20px
+
+.header__logo-img
+  height: 22px
+
+.header__nav
+  width: 100%
+  display: flex
+  align-items: center
+
+.header__list
+  display: flex
+  // padding-left: 8px
+  margin-right: auto
+
+.header__item
+  position: relative
+
+.header__item:not(:last-child)
+  margin-right: 38px
+
+.header__link
+  font-weight: 400
+  font-size: 18px
+  line-height: 21px
+  color: #AAA8B6
+  letter-spacing: 1px
+  text-transform: uppercase
+  outline: none
+
+.header__link-select
+  color: #0a0505
+
+
+
+.header__telegram
+  position: relative
+
+
+
+.header__link::after
+  content: " "
+  position: absolute
+  width: 100%
+  height: 2px
+  left: 0
+  bottom: -7px
+  background-color: #FFB6C1
+  transform: scaleX(0)
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out
+
+.header__link:focus::after
+  transform: scaleX(100%)
+
+.header__link:hover::after
+  transform: scaleX(100%)
+
+.header__link:active::after
+  transform: scaleX(100%)
+  background-color: #ed8c9b
+
+.header__list-mob
+  display: none
+
+// MEDIA
+
+@media (max-width: 900px)
+
+  .header__list-mob
+    display: flex
+    margin-right: auto
+
+  .header__item-mob:not(:last-child)
+    margin-right: 10px
+
+  .header__logo
+    margin-right: 15px
+
+  .header__nav-wrap
+    justify-content: flex-start
+
+  .header__burger
+    display: block
+
+  .header__nav
+    display: none
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100vh
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 50px
+    padding-top: 70px
+    background-color: #fff
+    box-shadow: 0 0 25px #888
+    overflow-y: auto
+    transform: translateY(-120%)
+    visibility: hidden
+    z-index: 100
+    transition: transform .3s ease-in-out
+
+  .header__nav--active
+    display: block
+    transform: none
+    visibility: visible
+
+  .header__nav .header__list
+    margin-right: 0
+    display: flex
+    flex-direction: column
+    align-items: center
+
+  .header__nav .header__item
+    margin-right: 0
+    margin-bottom: 30px
+
+
+
+  .header__item-telegram
+    display: none
+
+@media (max-width: 480px)
+  .header__container
+    padding: 0 10px

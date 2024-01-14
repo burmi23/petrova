@@ -1,0 +1,346 @@
+.book__bg
+  background-color: #AABFDA
+  background-image: url(../img/landing/book-bg-desctop-2.png)
+  background-position: top center
+  background-size: cover
+  background-repeat: no-repeat
+  height: inherit
+
+
+.book
+  padding-bottom: 50px
+  // background-image: url(../img/landing/book-bg.png)
+  // background-position: center center
+  // background-size: cover
+  // background-repeat: no-repeat
+
+.book__top
+  display: flex
+  // justify-content: space-between
+  margin-bottom: 31px
+
+.book__top-logo
+  position: relative
+  top: 0
+  left: -32px
+  display: block
+  width: 576px
+  height: 328px
+
+.book__top-right
+  padding-top: 60px
+
+.book__top-descr
+  max-width: 604px
+  min-height: 252px
+  padding: 31px 48px 26px 26px
+  background-color: rgba(255,255,255,.38)
+  border-radius: 25px
+
+.book__top-text
+  font-weight: 400
+  font-size: 22px
+  line-height: 26px
+  color: #4E6080
+  word-spacing: 2px
+  letter-spacing: 0.5px
+  margin-bottom: 11px
+
+.petrova-link
+  font-weight: 500
+  font-size: 22px
+  line-height: 32px
+  text-transform: uppercase
+  letter-spacing: 0.7px
+  color: #436CEF
+  // color: #4E6080
+  transition: color .3s ease-in-out
+
+.petrova-link:focus
+  color: #436CEF
+  text-decoration: underline
+
+.petrova-link:hover
+  color: #436CEF
+
+.petrova-link:active
+  color: #436CEF
+  text-decoration: underline
+
+.book__title
+  font-weight: 700
+  font-size: 50px
+  color: #fff
+  text-transform: uppercase
+  margin-bottom: 36px
+
+.book__list
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  // gap: 42px 18px
+  // perf*
+  gap: 42px 21px
+  // padding-left: 7px
+
+.book__item
+  width: 570px
+  min-height: 295px
+  display: flex
+  justify-content: space-between
+  padding: 20px
+  background-color: rgba(255,255,255,.49)
+  border-radius: 25px
+
+.book__item-left
+  padding: 0
+  opacity: 1
+
+.book__item-img
+  object-fit: cover
+  height: 100%
+  opacity: 1
+
+.book__item-right
+  width: 276px
+  display: flex
+  flex-direction: column
+  padding-top: 15px
+  padding-left: 8px
+
+.book__item-title
+  margin-bottom: 19px
+  font-weight: 700
+  font-size: 25px
+  color: #4E6080
+
+.book__item-subtitle
+  font-weight: 510
+  font-size: 17px
+  letter-spacing: 0.5px
+  color: #4E6080
+
+.book__item-price
+  font-weight: 700
+  font-size: 35px
+  color: #4E6080
+  margin-top: auto
+  margin-bottom: 15px
+
+.book__item-btn
+  width: 100%
+  height: 48px
+  // margin-top: auto
+  // background: #9F9F9F
+  // opacity: 0.25
+  // backdrop-filter: blur(2px)
+  background-color: #9F9F9F
+  outline: none
+  border: none
+  background-color: rgba(90, 101, 114, 0.25)
+  border-radius: 15px
+  font-weight: 510
+  font-size: 17px
+  color: #50667c
+  transition: background-color .3s ease-in-out, color .3s ease-in-out, border .3s ease-in-out
+
+.book__item-btn:focus
+  background: #fffefe
+  color: #768391
+  border: 1px solid CurrentColor
+
+.book__item-btn:hover
+  background: rgba(255,255,255,1)
+  color: #768391
+
+.book__item-btn:active
+  border: 1px solid CurrentColor
+
+.footer
+  padding-top: 50px
+  padding-bottom: 50px
+
+.footer__wrap
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding-top: 25px
+  padding-right: 49px
+  padding-bottom: 25px
+  padding-left: 49px
+  height: 91px
+  background-color: rgba(255,255,255,.4)
+  border-radius: 25px
+
+.footer__icons-list
+  display: flex
+
+.footer__icons-item:not(:last-child)
+  margin-right: 15px
+
+.footer__icons-item,
+.footer__icon-img-an
+  position: relative
+  display: block
+
+.footer__icon-link::after
+  content: ""
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  opacity: 0
+  outline: 2px solid #4E6080
+  outline-offset: 3px
+  border-radius: 100%
+  transition: opacity .5s ease-in-out
+
+.footer__icons-item:hover .footer__icon-link::after
+  opacity: 1
+
+// MEDIA
+
+@media (max-width: 1200px)
+  .book__list
+    justify-content: center
+
+  .book__top
+    flex-direction: column
+    align-items: center
+
+  .book__top-logo
+    left: 0
+
+  // .book__top-descr
+    // box-shadow: 5px 5px 32px -4px #000
+
+  .book__title
+    text-align: center
+    text-shadow: 1px 1px 2px #4E6080
+
+@media (max-width: 1024px)
+
+  .book
+    padding-top: 77px
+
+  .book__bg
+    background-image: url(../img/landing/book-bg_mob-1.png)
+
+@media (max-width: 800px)
+  .book__item
+    max-width: 604px
+
+@media (max-width: 600px)
+  .book__top-logo
+    width: 201.99px
+    height: 318px
+
+  .book__item-right
+    padding-left: 34px
+
+  .footer__wrap
+    justify-content: center
+
+  .footer__icons-list
+    display: none
+
+  .book__item
+    width: auto
+    align-items: center
+    flex-direction: column
+
+  .book__item-left
+    margin-bottom: 20px
+
+  .book__item-right
+    padding: 0
+    align-items: center
+
+  .book__item-subtitle
+    margin-bottom: 20px
+
+  .book__item-price
+    margin-bottom: 20px
+
+@media (max-width: 480px)
+  .book__item-right
+    width: 215px
+
+  .book .container
+    padding: 0 30px
+
+  .book__top-text
+    font-weight: 400
+    font-size: 15px
+    line-height: 18px
+    margin-bottom: 0
+
+  .book__top-descr
+    padding: 19px 14px 10px 21px
+    min-height: 0px
+
+  .book__top-link.petrova-link
+    display: none
+
+  // .book__top-right
+  //   padding-top: 8px
+
+  // .book__item
+  //   width: auto
+  //   background-color: transparent
+  //   min-height: 202px
+
+  // .book__item-left
+  //   display: none
+
+  // .book__item-right
+  //   padding: 0
+  //   text-align: center
+  //   color: #FFFFFF
+
+  // .book__item-title
+  //   margin-bottom: 15px
+  //   font-weight: 700
+  //   font-size: 25px
+  //   text-transform: uppercase
+  //   color: CurrentColor
+
+  // .book__item-subtitle
+  //   margin-bottom: 19px
+  //   font-weight: 500
+  //   font-size: 18px
+  //   text-transform: uppercase
+  //   color: CurrentColor
+
+  // .book__item-price
+  //   margin-bottom: 15px
+  //   font-weight: 700
+  //   font-size: 32px
+  //   text-transform: uppercase
+  //   color: CurrentColor
+
+  // .book__item-btn
+  //   background-color: transparent
+  //   height: 62px
+  //   font-weight: 500
+  //   font-size: 25px
+  //   color: #FFFFFF
+  //   border-radius: 0
+
+  // .footer__wrap
+  //   background-color: transparent
+
+  .petrova-link
+    font-weight: 500
+    font-size: 22px
+    color: #436cef
+
+  .petrova-link:focus
+    color: #FFFFFF
+
+  .petrova-link:hover
+    color: #FFFFFF
+
+  .petrova-link:active
+    color: #FFFFFF

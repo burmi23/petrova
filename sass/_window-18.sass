@@ -1,0 +1,97 @@
+.blur-on-off
+  filter: blur(10px)
+
+.agree__on
+  max-width: 550px
+  min-width: 300px
+  position: fixed
+  padding: 20px
+  max-height: 200px
+  top: 15%
+  bottom: 10%
+  left: 50%
+  transform: translateX(-50%)
+  z-index: 1030
+  border-radius: 25px
+  background-color: rgba(255,255,255,0.5)
+
+.agree__off
+  display: none
+
+.block-off
+  display: none
+
+.agree__wrap
+  height: 100%
+  display: flex
+  flex-direction: column
+
+.agree__text
+  margin-bottom: 20px
+  text-align: center
+  font-weight: 510
+  font-size: 17px
+  letter-spacing: 0.5px
+  color: #4E6080
+
+.agree__subtext
+  text-align: center
+  font-size: 12px
+  margin-bottom: 20px
+  font-weight: 510
+  font-size: 15px
+  letter-spacing: 0.5px
+  color: #4E6080
+
+.agree__buttons-wrap
+  display: flex
+  justify-content: space-between
+  margin-top: auto
+
+.agree__btn
+  width: 40%
+  padding: 5px 6px
+  text-align: center
+  background-color: rgba(211, 211, 211, 0.9)
+  border-radius: 25px
+  cursor: pointer
+
+  font-weight: 510
+  font-size: 17px
+  letter-spacing: 0.5px
+  color: #4E6080
+  outline: none
+  border: none
+
+.agree__btn-yes,
+.agree__btn-no
+  transition: background-color .3s ease-in-out
+
+.agree__btn-yes:focus
+  background-color: rgba(164, 208, 161, 0.9)
+
+.agree__btn-yes:hover
+  background-color: rgba(164, 208, 161, 0.9)
+
+.agree__btn-yes:active
+  background-color: rgba(164, 208, 161, 0.9)
+
+.agree__btn-no:focus
+  background-color: #FFB6C1
+
+.agree__btn-no:hover
+  background-color: #FFB6C1
+
+.agree__btn-no:active
+  background-color: #FFB6C1
+
+.stop-scroll
+  overflow: hidden
+  // height: 100vh
+
+@media (max-width: 480px)
+  .agree__subtext
+    font-size: 10px
+
+  .agree__on
+    max-height: 150px
